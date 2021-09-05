@@ -1,0 +1,44 @@
+.header{
+    background: #e3f2fd;
+    padding: 5px 0;
+}
+.image img{
+    width: 55px;
+    margin-left: 40px;
+}
+.hello{
+
+}
+ul li a{
+    color: black;
+}
+.btn-bg{
+    background: #e3f2fd;
+    color: #39ae56;
+  
+}
+/* breadcrumd section and toast start*/
+.bg-mute {
+    background: #e9ecef;
+    padding: 12px 10px;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+}
+/* breadcrumd section and toast end*/
+/* alerted start */
+.alerted{
+    font-size: 17px;
+}
+.alerted h6{
+    font-size: 26px;
+}
+.alerted p{}
+/* alerted end */
+.bg-muted{
+    background:#727b82;
+}
+.para img{
+    height: 600px;
+}

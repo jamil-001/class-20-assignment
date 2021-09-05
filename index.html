@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style type="text/css">
+        .scrollspy-example {
+          position: relative;
+          height: 200px;
+          margin-top: .5rem;
+          overflow: auto;
+        }
+        </style>
+        <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+   
+ <!-- header section start -->
+ <header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1">
+                <div class="image">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-11">
+                <nav class="navbar navbar-expand-lg navbar-dark hello">
+                    <div class="container-fluid">
+                        <a class="navbar-brand text-dark" href="#">Home</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarColor01">
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-muted" href="#">Blog
+                                        <span class="visually-hidden">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-muted" href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-muted" href="#">My Resume</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-muted" href="#">contact</a>
+                                </li>
+
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-sm-2" type="text" placeholder="Search">
+                                <button class="btn btn-bg  border border-success my-2 my-sm-0"
+                                    type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- header section end -->
+
+<section>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-8">
+                <ol class="breadcrumb bg-mute">
+                    <li class="breadcrumb-item active">Home</li>
+                </ol>
+                <ol class="breadcrumb bg-mute">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Library</li>
+                </ol>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <strong class="me-auto">Bootstrap</strong>
+                        <small>11 mins ago</small>
+                        <button type="button" class="btn-close ms-2 mb-1" data-bs-dismiss="toast"
+                            aria-label="Close">
+                            <span aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="toast-body">
+                        Hello, world! This is a toast message.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- carusol section start -->
+<section class="carusol">
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+
+        </ol>
+        <div class="carousel-inner" role="listbox" >
+
+            <div class="carousel-item active para">
+                <img class="d-block w-100" src="img/1.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item para">
+                <img class="d-block w-100" src="img/1.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+</section>
+<!-- carosol section end -->
+<!-- alert section start -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            
+            <div class="alert alert-success alert-dismissible fade show alerted  mt-5" role="alert">
+                <h6>Well done!</h6> your successfull read this important alert message.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+        </div>
+    </div>
+</div>
+<!-- alert section end -->
+<!-- pogress and accordion section  start -->
+<section>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+
+                  <div class="progress mt-2">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 20%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress mt-2">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 35%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress mt-2">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress mt-2">
+                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 60%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress mt-2">
+                    <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" style="width: 80%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="accordion " id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed  text-primary fs-2 fw-normal bg-light p-2  " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                   <h4>   Collapsible Group Item #1</h4>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed text-primary fs-2 fw-normal bg-light p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                     <h4> Collapsible Group Item #2</h4>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed text-primary fs-2 fw-normal bg-light p-2 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <h4>Collapsible Group Item #3</h4>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+<!-- pogress and accordion section  end -->
+<!-- modal and popover start  -->
+<section>
+    <div class="container">
+        <div class="row mt-4">
+         <div class="col-lg-5">
+           <!-- Button trigger modal -->
+           <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modelId">
+             Launch
+           </button>
+           
+           <!-- Modal -->
+           <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                   <div class="modal-content">
+                       <div class="modal-header">
+                           <h5 class="modal-title">Modal title</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                       </div>
+                       <div class="modal-body">
+                           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint tempore doloremque fuga molestiae quas placeat qui sed facilis magni assumenda vitae deserunt eaque iure deleniti ipsa rerum, velit veniam, consequatur eveniet. Velit repellendus reiciendis repellat ab sit vitae eaque. Autem quaerat nobis optio asperiores officiis delectus minus eaque consequuntur culpa?
+                       </div>
+                       <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                           <button type="button" class="btn btn-primary">Save Changes</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+         </div>
+
+            <div class="col-lg-7">
+
+
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                    Tooltip on top
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+                    Tooltip on right
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+                    Tooltip on bottom
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                    Tooltip on left
+                  </button>
+
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- modal and popover end -->
+
+<!-- spyscroll section start -->
+
+<section>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-lg-12">
+                <nav id="navbar-scrollspy" class="navbar navbar-light bg-light px-3">
+                    <a class="navbar-brand" href="#">Project Name</a>
+                    <ul class="nav nav-pills">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#fat">Verse 1</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#mdo">Verse 2</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-offset="0" tabindex="0" class="scrollspy-example">
+                    <h4 id="fat">Verse 1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corrupti perspiciatis distinctio, officia ipsam debitis animi hic? Iusto autem est accusantium quas recusandae consectetur eligendi at et praesentium placeat dignissimos, quasi ipsum neque explicabo non, maxime nemo reprehenderit corporis doloribus amet ab omnis dolorum, debitis ipsam? Nulla veritatis, fugiat cum possimus minima reiciendis eos exercitationem numquam a officia sunt voluptatibus. Ducimus et porro non necessitatibus quae possimus voluptate libero ratione, iure sint! Aspernatur autem saepe doloribus perferendis eos eaque quo ex. Reiciendis neque quidem odio, beatae, similique eaque iusto voluptatem quae eveniet unde accusamus iure pariatur consequatur distinctio qui error?</p>
+                    <h4 id="mdo">Verse 2</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam corporis esse fugiat alias, aut libero assumenda saepe neque doloribus ducimus sit pariatur repudiandae sequi sed dolore culpa vero itaque! Iure quos rerum odit, ducimus culpa quidem nisi voluptas possimus accusantium iusto, harum hic vel? Unde illum, odit repellendus impedit magni dolores. Minus sunt laboriosam quisquam eligendi cumque aliquam quas pariatur minima ut ea odio ipsum accusamus amet nostrum, consectetur ullam deleniti esse debitis repellat harum nemo illum saepe. Molestias autem inventore libero nam aliquam molestiae, aliquid temporibus magnam quod iste ut laudantium, adipisci illo enim mollitia cupiditate reiciendis veniam pariatur.</p>
+                   
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- spyscroll section end -->
+
+<!-- paigination-and-dropdown-section-start -->
+  <section>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 offset-4">
+                <nav aria-label="Page navigation" >
+                    <ul class="pagination">
+                      <li class="page-item ">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item "><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+              </div>
+              <div class="col-lg-4">
+                  <div class="row">
+                      <div class="col-lg-4 ">
+
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown button
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                        
+                      </div>
+                      <div class="col-lg-4"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+<!-- paigination-and-dropdown-section-end -->
+<!-- footer section start -->
+ <footer class="bg-info text-center py-4 text-light">
+     <div class="container">
+         <div class="row">
+             <div class="col-lg-12">
+                 <h5> &copy; All right reserved design by LFWF</h5>
+             </div>
+         </div>
+     </div>
+ </footer>
+    
+   
+
+   <!-- popper min js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap min js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
+  </script>
+
+
+  
+   
+   <script>
+       var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+   </script>
+  </body>
+</html>
